@@ -16,7 +16,7 @@ const calculateHash = async () => {
     const data = input.read();
     if (data) hash.update(data);
     else {
-      console.log(`${hash.digest("hex")} ${src}`);
+      console.log(`${hash.digest("hex")}`);
     }
   });
 };
